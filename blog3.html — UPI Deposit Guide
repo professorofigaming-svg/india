@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head>
+<title>UPI Deposit Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{background:#0b0f19;color:white;font-family:Arial;padding:20px}
+.card{background:#161c2d;padding:20px;border-radius:14px}
+h1{color:#f2a900}</style></head>
+<body>
+<h1>UPI Deposit Guide</h1>
+<div class="card">
+Use PhonePe, GPay, Paytm → choose UPI → scan → confirm → balance updates instantly.
+Always verify merchant name.
+</div>
+<a href="index.html">← Back</a>
+</body></html>
