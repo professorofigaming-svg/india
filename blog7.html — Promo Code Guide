@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head>
+<title>Promo Code Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{background:#0b0f19;color:white;font-family:Arial;padding:20px}
+.card{background:#161c2d;padding:20px;border-radius:14px}
+h1{color:#f2a900}</style></head>
+<body>
+<h1>Promo Code Use Guide</h1>
+<div class="card">
+Enter promo code during signup or deposit page.
+Check spelling — codes are case-sensitive.
+</div>
+<a href="index.html">← Back</a>
+</body></html>
