@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://bookmakersolution.com/sitemap.xml
+Sitemap: https://bookmakersolution.com/sitemap.html
+
+# Crawl delay for search engines
+Crawl-delay: 2
