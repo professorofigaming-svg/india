@@ -1,61 +1,69 @@
 # robots.txt for BookmakerSolution.com
 # Created: 14 February 2026
+# This file tells search engines which pages to crawl
 
-# Allow all search engines to crawl the site
+# Allow all search engines to crawl the entire site
 User-agent: *
 Allow: /
 
-# Disallow access to private/admin areas (if any)
-# Disallow: /admin/
-# Disallow: /private/
-
-# Specify sitemap location
+# Specify sitemap location - VERY IMPORTANT for Google
 Sitemap: https://www.bookmakersolution.com/sitemap.xml
 
-# Crawl delay for polite crawling (optional)
+# Optional: Add crawl delay to be gentle on servers
 # Crawl-delay: 1
 
-# Host directive (optional)
-Host: https://www.bookmakersolution.com
+# ------------------------------------------------------------
+# IMPORTANT: Do NOT block any important pages
+# All betting review pages should be accessible
+# ------------------------------------------------------------
 
-# Rules for specific bots (optional)
+# Block access to sensitive files (if any exist)
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /private/
 
-# Googlebot
+# Block access to file extensions that shouldn't be indexed
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.zip$
+Disallow: /*.txt$
+
+# Allow CSS, JS and images (important for page rendering)
+Allow: /*.css$
+Allow: /*.js$
+Allow: /images/
+Allow: /assets/
+
+# ------------------------------------------------------------
+# SPECIFIC BOT CONFIGURATIONS (Optional)
+# ------------------------------------------------------------
+
+# Googlebot specific settings
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
+
+# Googlebot-Image - allow all images
+User-agent: Googlebot-Image
+Allow: /
 
 # Bingbot
 User-agent: bingbot
 Allow: /
 Crawl-delay: 1
 
-# Yandex
+# Yandex (Russian search engine)
 User-agent: Yandex
 Allow: /
 Crawl-delay: 2
 
-# Baidu
+# Baidu (Chinese search engine)
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 2
-
-# Disallow access to duplicate content or parameterized URLs
-User-agent: *
-Disallow: /*?*
-Disallow: /*.pdf$
-Disallow: /*.jpg$
-Disallow: /*.png$
-
-# Allow images and CSS (usually fine)
-Allow: /*.css$
-Allow: /*.js$
-Allow: /images/
-
-# Block access to temp or system files
-Disallow: /tmp/
-Disallow: /temp/
-Disallow: /logs/
-Disallow: /backup/
 
 # End of robots.txt
