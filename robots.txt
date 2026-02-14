@@ -1,69 +1,11 @@
 # robots.txt for BookmakerSolution.com
-# Created: 14 February 2026
-# This file tells search engines which pages to crawl
+# Simple version - Perfect for most websites
 
-# Allow all search engines to crawl the entire site
+# Allow all search engines to crawl everything
 User-agent: *
 Allow: /
 
-# Specify sitemap location - VERY IMPORTANT for Google
+# Tell Google where to find your sitemap
 Sitemap: https://www.bookmakersolution.com/sitemap.xml
 
-# Optional: Add crawl delay to be gentle on servers
-# Crawl-delay: 1
-
-# ------------------------------------------------------------
-# IMPORTANT: Do NOT block any important pages
-# All betting review pages should be accessible
-# ------------------------------------------------------------
-
-# Block access to sensitive files (if any exist)
-Disallow: /admin/
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /temp/
-Disallow: /backup/
-Disallow: /logs/
-Disallow: /private/
-
-# Block access to file extensions that shouldn't be indexed
-Disallow: /*.pdf$
-Disallow: /*.doc$
-Disallow: /*.zip$
-Disallow: /*.txt$
-
-# Allow CSS, JS and images (important for page rendering)
-Allow: /*.css$
-Allow: /*.js$
-Allow: /images/
-Allow: /assets/
-
-# ------------------------------------------------------------
-# SPECIFIC BOT CONFIGURATIONS (Optional)
-# ------------------------------------------------------------
-
-# Googlebot specific settings
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-# Googlebot-Image - allow all images
-User-agent: Googlebot-Image
-Allow: /
-
-# Bingbot
-User-agent: bingbot
-Allow: /
-Crawl-delay: 1
-
-# Yandex (Russian search engine)
-User-agent: Yandex
-Allow: /
-Crawl-delay: 2
-
-# Baidu (Chinese search engine)
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-# End of robots.txt
+# That's it! Google will index all your pages
