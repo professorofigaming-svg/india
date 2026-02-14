@@ -1,11 +1,4 @@
-# robots.txt for BookmakerSolution.com
-# Simple version - Perfect for most websites
-
-# Allow all search engines to crawl everything
 User-agent: *
 Allow: /
 
-# Tell Google where to find your sitemap
 Sitemap: https://www.bookmakersolution.com/sitemap.xml
-
-# That's it! Google will index all your pages
