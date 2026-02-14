@@ -1,10 +1,61 @@
+# robots.txt for BookmakerSolution.com
+# Created: 14 February 2026
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
 
-Sitemap: https://bookmakersolution.com/sitemap.xml
-Sitemap: https://bookmakersolution.com/sitemap.html
+# Disallow access to private/admin areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
 
-# Crawl delay for search engines
+# Specify sitemap location
+Sitemap: https://www.bookmakersolution.com/sitemap.xml
+
+# Crawl delay for polite crawling (optional)
+# Crawl-delay: 1
+
+# Host directive (optional)
+Host: https://www.bookmakersolution.com
+
+# Rules for specific bots (optional)
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex
+User-agent: Yandex
+Allow: /
 Crawl-delay: 2
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Disallow access to duplicate content or parameterized URLs
+User-agent: *
+Disallow: /*?*
+Disallow: /*.pdf$
+Disallow: /*.jpg$
+Disallow: /*.png$
+
+# Allow images and CSS (usually fine)
+Allow: /*.css$
+Allow: /*.js$
+Allow: /images/
+
+# Block access to temp or system files
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /logs/
+Disallow: /backup/
+
+# End of robots.txt
